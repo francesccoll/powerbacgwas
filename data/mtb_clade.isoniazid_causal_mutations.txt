@@ -1,0 +1,6 @@
+Chromosome.2155167.G.T	200
+Chromosome.2155168.C.G	200
+Chromosome.2155168.C.T	200
+Chromosome.2155786.G.A	200
+Chromosome.2155801.C.T	200
+Chromosome.2156062.C.T	200
