@@ -1,0 +1,39 @@
+
+## Parameters used to run power calculations
+
+# v4, used to change range of homoplasy values
+
+# This file is used by script prepare_gwas_runs.py
+# 
+# NOTES on editing this file to change parameters
+# 	- Select a single wide range of homoplasy steps (e.g. 'homoplasy_steps_from: 0' and 'homoplasy_steps_to: 1000' to disable selection of variants by degree of homoplasy
+# 	- Some parameters are indicated with ranges (defined from parameter_from to parameter_to) as it is more likely to find variants (e.g. SNPs) whose parameter values fall within a range (e.g. allele frequency) than having a specific value.
+#	- The pipeline allows to vary the effect sizes of causal variants or their heritability, but not both. If multiple values of effect_size_from/effect_size_to and heritability are used, the script prepare_gwas_runs.py will exit with an error.
+#	- The units of effect_size must be specified as odds ratio (where 0 to 1 indicate negative association, 1 no association, and > 1 positive association). When using GCTA, they will be converted to beta units where beta=log(OR)
+
+################################################
+# ---- Causal variant sampling parameters ---- #
+################################################
+allele_frequency_from: 0.020,0.040,0.080,0.16,0.22
+allele_frequency_to: 0.030,0.060,0.120,0.24,0.28
+homoplasy_steps_from: 1,5,10,50
+homoplasy_steps_to: 5,10,50,100
+# homoplasy_steps_from: 0
+# homoplasy_steps_to: 1000
+number_causal_variants: 1
+sampling_repetitions: 10
+
+################################################
+# ----- Phenotype simulation parameters ------ #
+################################################
+
+sample_size: 100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500
+case_control_ratio: 0.5
+effect_size: 5,10,100
+# effect_size: 2
+# heritability: 1
+# NOTE: a range of heritability values can be selected. In this case, a single effect size range must be selected.
+# heritability: 0.1,0.25,0.5,0.99
+heritability: 0.5
+prevalence: 0.5
+simulation_repetitions: 5

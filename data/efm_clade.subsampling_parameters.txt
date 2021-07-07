@@ -1,0 +1,18 @@
+
+## Parameters used to run power calculations
+
+# This file is used by script prepare_gwas_runs_subsampling.py
+# 
+# NOTES on editing this file to change parameters
+#	- The units of effect_size must be specified as odds ratio (where 0 to 1 indicate negative association, 1 no association, and > 1 positive association).
+
+
+#############################################################
+# ----- Sub-sampling phenotype simulation parameters ------ #
+#############################################################
+
+allele_frequency: 0.01,0.025,0.05,0.10,0.20,0.25
+sample_size: 100,200,300,400,500,600,700
+case_control_ratio: 0.5
+effect_size: 1.5,5,10,100
+simulation_repetitions: 10
