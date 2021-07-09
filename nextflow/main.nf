@@ -14,7 +14,7 @@ include {ancestral_state_reconstruction_vcf; ancestral_state_reconstruction_pg; 
 include {phylogeny_distance; prepare_gwas_runs_subsampling_pg; collect_gwas_scripts; run_gwas_bash_script_subsampling_pg; process_gwas_runs_subsampling; pan_genome_patterns; plot_gwas_runs_subsampling} from './modules/gwas.nf'
 include {prepare_gwas_runs_subsampling_burden; run_gwas_bash_script_subsampling_burden; prepare_gwas_runs_subsampling_vcf; run_gwas_bash_script_subsampling_vcf} from './modules/gwas.nf'
 include {prepare_gwas_runs_phensim_pg; run_gwas_bash_script_phensim_pg; process_gwas_runs; plot_gwas_runs; prepare_gwas_runs_phensim_vcf; run_gwas_bash_script_phensim_vcf; vcf_patterns; prepare_gwas_runs_phensim_burden; run_gwas_bash_script_phensim_burden; number_of_genes } from './modules/gwas.nf'
-include {copy_files; get_random_tmp_dir} from './modules/other.nf'
+include {copy_files} from './modules/other.nf'
 
 
 
