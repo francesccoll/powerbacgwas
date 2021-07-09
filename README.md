@@ -2,8 +2,26 @@
 
 PowerBacGWAS is a computational pipeline to conduct power calculations for bacterial GWAS. It uses existing collections of bacterial genomes to establish the sample sizes required to detect statistical significant associations for a given genotype frequency and effect size (or phenotype heritability). It supports a range of genomic variation including SNPs, indels, and variation in gene content (pan-genome). Here, we make the code available, and provide installation and [usage](https://github.com/francesccoll/powerbacgwas/wiki#usage) instructions. PowerBacGWAS can be applied to any bacterial population Here we applied it to three different bacterial species: _Enterococcus faecium_, _Klebsiella pneumoniae_, and _Mycobacterium tuberculosis_.
 
-# Installation
-PowerBacGWAS consists of a set of python scripts that would work provided that all required dependencies below (both python modules and software) are installed in your local machine.
+# Docker/Nextflow Installation
+
+The easiest and recommended way to install and run PowerBacGWAS is via its Docker/Nextflow implementation.
+
+You will need to:
+
+1. Install [Docker](https://www.docker.com/) or [Singularity](https://sylabs.io/singularity/) 
+2. Install [Nextflow](https://www.nextflow.io/)
+3. Download PowerBacGWAS Nextflow files from GitHub:
+
+```console
+git clone https://github.com/francesccoll/powerbacgwas/
+cd powerbacgwas/nextflow
+nextflow run main.nf --help
+```
+
+See the [PowerBacGWAS](https://github.com/francesccoll/powerbacgwas/wiki#usage) wiki page for examples of Nextflow commands.
+
+# Manual Installation
+PowerBacGWAS consists of a set of Python and R scripts that would work provided that all required dependencies below (both python modules and software) are installed in your local machine.
 
 ## Required dependencies
 
