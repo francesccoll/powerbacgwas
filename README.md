@@ -20,7 +20,7 @@ nextflow run main.nf --help
 
 See the [PowerBacGWAS](https://github.com/francesccoll/powerbacgwas/wiki#usage) wiki page for examples of Nextflow commands.
 
-# Manual Installation
+# Local Installation
 PowerBacGWAS consists of a set of Python and R scripts that would work provided that all required dependencies below (both python modules and software) are installed in your local machine.
 
 ## Required dependencies
