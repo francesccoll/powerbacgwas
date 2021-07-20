@@ -12,8 +12,8 @@
 ################################################
 # ---- Causal variant sampling parameters ---- #
 ################################################
-allele_frequency_from: 0.00,0.020,0.045,0.095,0.19,0.24
-allele_frequency_to: 0.01,0.030,0.055,0.105,0.21,0.26
+allele_frequency_from: 0.00,0.020,0.045,0.095,0.24
+allele_frequency_to: 0.01,0.030,0.055,0.105,0.26
 # homoplasy_steps_from: 1,1,2,5,10,20,50
 # homoplasy_steps_from: 1,2,5,10,20,50,100
 homoplasy_steps_from: 0
