@@ -7,7 +7,7 @@
 # 	- Select a single wide range of homoplasy steps (e.g. 'homoplasy_steps_from: 0' and 'homoplasy_steps_to: 1000' to disable selection of variants by degree of homoplasy
 # 	- Some parameters are indicated with ranges (defined from parameter_from to parameter_to) as it is more likely to find variants (e.g. SNPs) whose parameter values fall within a range (e.g. allele frequency) than having a specific value.
 #	- The pipeline allows to vary the effect sizes of causal variants or their heritability, but not both. If multiple values of effect_size_from/effect_size_to and heritability are used, the script prepare_gwas_runs.py will exit with an error.
-#	- The units of effect_size must be specified as odds ratio (where 0 to 1 indicate negative association, 1 no association, and > 1 positive association). When using GCTA, they will be converted to beta units where beta=log(OR)
+#	- The units of effect_size must be specified as odds ratio (where 0 to 1 indicate negative association, 1 no association, and > 1 positive association) when simulating a binary phenotype, or in beta units when simulating a quantitative phenotype
 
 ################################################
 # ---- Causal variant sampling parameters ---- #
